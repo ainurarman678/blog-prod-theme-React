@@ -1,0 +1,108 @@
+.BlogPostCard {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 4px 4px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.BlogPostCard:hover {
+  transform: scale(1.02);
+}
+.image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 0px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+}
+.container1 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-halfunit);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text {
+  color: var(--dl-color-gray-500);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.text1 {
+  color: var(--dl-color-gray-500);
+  font-weight: 300;
+}
+.text2 {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.Container2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Profile {
+  display: flex;
+  align-items: center;
+}
+.image1 {
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-round);
+}
+.text3 {
+  font-style: normal;
+  font-weight: 600;
+  margin-left: var(--dl-space-space-halfunit);
+}
+.link {
+  color: var(--dl-color-gray-black);
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+.rootClassName3 {
+  align-self: center;
+}
+@media(max-width: 991px) {
+  .BlogPostCard {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media(max-width: 767px) {
+  .BlogPostCard {
+    flex-direction: column;
+  }
+  .image {
+    width: 100%;
+  }
+}
+@media(max-width: 479px) {
+  .Container2 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .link {
+    width: auto;
+  }
+}

@@ -4,17 +4,16 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 import Nav from '../components/nav'
-import BlogPostCard1 from '../components/blog-post-card1'
-import BlogPostCard21 from '../components/blog-post-card21'
+import BlogPostCard22 from '../components/blog-post-card22'
 import projectStyles from '../style.module.css'
-import styles from './home.module.css'
+import styles from './category.module.css'
 
-const Home = () => {
+const Category = () => {
   return (
     <div className={styles['container']}>
       <Helmet>
-        <title>blog-prod-theme</title>
-        <meta property="og:title" content="blog-prod-theme" />
+        <title>Category - blog-prod-theme</title>
+        <meta property="og:title" content="Category - blog-prod-theme" />
       </Helmet>
       <header className={styles['Header']}>
         <Link to="/" className={styles['navlink']}>
@@ -27,7 +26,7 @@ const Home = () => {
             text2="Blog Series"
             text3="About Me"
             text4="About This Site"
-            rootClassName="rootClassName"
+            rootClassName="rootClassName8"
           ></Nav>
         </div>
         <div
@@ -39,7 +38,7 @@ const Home = () => {
         </div>
         <div className={projectStyles['teleport-menu-mobile']}>
           <div className={styles['Nav1']}>
-            <div className={styles['Container01']}>
+            <div className={styles['Container1']}>
               <img
                 alt="image"
                 src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
@@ -51,7 +50,7 @@ const Home = () => {
                 </svg>
               </div>
             </div>
-            <Nav rootClassName="rootClassName1"></Nav>
+            <Nav rootClassName="rootClassName9"></Nav>
           </div>
           <div>
             <svg
@@ -75,101 +74,33 @@ const Home = () => {
           </div>
         </div>
       </header>
-      <div className={styles['Banner']}>
-        <h2 className={styles['text01']}>
-          <span>
-            <span>Selamat Datang di Blog Ainur Rachman</span>
-          </span>
-        </h2>
-        <a
-          href="#newposts"
-          className={` ${styles['link']} ${projectStyles['button']} `}
-        >
-          <span>
-            <span>Lihat Post Terbaru</span>
-            <span></span>
-          </span>
-        </a>
+      <div id="newposts" className={styles['container2']}>
+        <span className={styles['text1']}>
+          <span>Kategori</span>
+        </span>
       </div>
-      <div className={styles['container02']}>
-        <div className={styles['container03']}>
-          <span className={styles['text07']}>
-            <span>Postingan Unggulan</span>
-          </span>
-        </div>
-        <div className={styles['Blog']}>
-          <div className={styles['container04']}>
-            <a
-              href="https://google.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className={styles['link1']}
-            >
-              <BlogPostCard1
-                rootClassName="rootClassName5"
-                className={styles['BlogPostCard1']}
-              ></BlogPostCard1>
-            </a>
-          </div>
-          <div className={styles['container05']}>
-            <a
-              href="https://google.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className={styles['link2']}
-            >
-              <BlogPostCard1
-                image_src="https://images.unsplash.com/photo-1465925508512-1e7052bb62e6?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIzfHxjaXR5JTIwY2FifGVufDB8fHx8MTYyNjQ1MDMwNA&amp;ixlib=rb-1.2.1&amp;h=1200"
-                rootClassName="rootClassName6"
-                className={styles['BlogPostCard11']}
-              ></BlogPostCard1>
-            </a>
-          </div>
-          <div className={styles['container06']}>
-            <a
-              href="https://google.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className={styles['link3']}
-            >
-              <BlogPostCard1
-                image_src="https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE4fHxjaXR5fGVufDB8fHx8MTYyNjQ1MDI4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
-                rootClassName="rootClassName7"
-                className={styles['BlogPostCard12']}
-              ></BlogPostCard1>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className={styles['container07']}>
-        <div id="newposts" className={styles['container08']}>
-          <span className={styles['text09']}>
-            <span>Postingan Terbaru</span>
-          </span>
-        </div>
-      </div>
-      <div className={styles['Blog1']}>
-        <div className={styles['container09']}>
-          <BlogPostCard21
+      <div className={styles['Blog']}>
+        <div className={styles['container3']}>
+          <BlogPostCard22
             profile_src="https://images.unsplash.com/photo-1611232658409-0d98127f237f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIzfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
             rootClassName="rootClassName3"
-          ></BlogPostCard21>
+          ></BlogPostCard22>
         </div>
-        <div className={styles['container10']}>
-          <BlogPostCard21
+        <div className={styles['container4']}>
+          <BlogPostCard22
             image_src="https://images.unsplash.com/photo-1595565312451-23051ab0666c?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1000"
             profile_src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
             rootClassName="rootClassName"
-          ></BlogPostCard21>
+          ></BlogPostCard22>
         </div>
-        <BlogPostCard21
+        <BlogPostCard22
           image_src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIxfHxwb3J0cmFpdCUyMHdvbWFuJTIwY29sb3J8ZW58MHx8fHwxNjI2NDUwNTU4&amp;ixlib=rb-1.2.1&amp;h=1000"
           profile_src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
           rootClassName="rootClassName2"
-        ></BlogPostCard21>
+        ></BlogPostCard22>
       </div>
       <footer className={styles['Footer']}>
-        <span className={styles['text11']}>
+        <span className={styles['text3']}>
           <span>Â© 2021 Ainur Rachman</span>
         </span>
         <div className={styles['IconGroup1']}>
@@ -197,4 +128,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Category
